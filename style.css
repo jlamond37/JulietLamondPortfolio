@@ -72,11 +72,33 @@ h4  {
     font-size: 30px;
 }
 
-h5  {
+#ContactMe  {
     padding-left: 50px;
     color: black;
     font-size: 30px;
 }
+
+.bigcard {
+    border-style: solid;
+    border-width: 1px;
+    height: 100px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .smallcards {
+    border-style: solid;
+    border-width: 1px;
+    height: 100px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 footer {
     overflow: hidden;
@@ -116,3 +138,4 @@ a {
       background: var(--blue);
     }
   }
+
