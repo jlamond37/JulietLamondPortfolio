@@ -14,7 +14,7 @@ header {
     position: relative;
     width: 100%;
     border: 1px solid black;
-    font-size: 50px;
+  
 }
 
 h1 {
@@ -22,19 +22,17 @@ h1 {
     padding-left: 50px;
     margin-top: 40px;
     margin-bottom: 25px;
+    font-size: 50px;
   
 }
+
 
 h2 {
     float: right;
     padding-right: 50px;
     padding: 10px;
     background-image: url("./images/klimpt.jpeg");
-}
-
-.welcome {
     height: 70px;
-    background-color: var(--blue);
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -44,8 +42,9 @@ h2 {
     width: 100%;
     border: 1px solid black;
    font-size: 40px;
-   
 }
+
+
 
 
 .navbar {
@@ -53,35 +52,35 @@ h2 {
     margin-bottom: 30px;
     margin-top: 50px;
     padding-right: 60px;
-   font-size: 20px;
+   font-size: 10px;
 }
     
 
-h3  {
-    padding-left: 50px;
-    margin-top: 100px;
-    color: black;
-}
 
 #AboutMe {
+  padding-left: 50px;
+    margin-top: 100px;
+    color: black;
+    text-align: center;
   font-size: 30px;
 }
 
-p {
-    padding: 30px;
-    width: 50%;
-    margin: 20px;
+.aboutmepara {
+  padding: 20px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
+
 
 h4  {
     padding-left: 50px;
     color: black;
     font-size: 30px;
+    text-align: center;
 }
 
-#Work {
-  font-size: 30px;
-}
+
 
 #ContactMe  {
     padding-left: 50px;
@@ -94,38 +93,36 @@ h4  {
     border-width: 1px;
     height: 200px;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     background-image:url("./images/flowers.jpeg");
   }
 
-
+.here {
+  display: flex;
+}
 
   .smallcard1 {
     border-style: solid;
-    border-width: 1px;
-    height: 100px;
-    width: 25%;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    background-image:url("./images/monet.webp")
+    border-width: 1px; 
+    height: 200px;
+    width: 50%;
+    display: inline;
+    margin-left: 10em;
+    background-image:url("./images/flowers.jpeg");
   }
 
   .smallcard2 {
     border-style: solid;
-    border-width: 1px;
-    height: 100px;
-    padding: 10px;
-    width: 25%;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    background-image:url("./images/monet.webp")
+    border-width: 1px; 
+    height: 200px;
+    margin-right: 10em;
+    width: 50%;
+    display: inline;
+    
+    background-image:url("./images/flowers.jpeg");
   
   }
 
@@ -133,7 +130,7 @@ h4  {
 
 #ContactMe {
   display: relative;
-  align-items: left;
+  text-align: center;
   margin-top: 150px;
   margin-bottom: 50px;
 }
@@ -168,12 +165,14 @@ a {
     /* Change the header color */
     header {
       background: var(--blue)
+      display: inline;
     }
   }
   
   /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
     .card {
+      display: inline;
       width: 100%;
     }
     /* Change the header color */
